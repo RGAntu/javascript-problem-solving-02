@@ -106,3 +106,20 @@ function getCheapestPhone(mobiles){
 
 const cheap = getCheapestPhone(mobiles);
 console.log("The cheapest phone is ", cheap);
+
+
+
+// expensive 
+
+function getExpensivePhone(mobiles){
+  let expMobile = mobiles[0];
+  for(const mobile of mobiles){
+    if( mobile.price > expMobile.price){ 
+        expMobile = mobile;
+  }
+  }
+return expMobile;
+}
+
+const expensive = getExpensivePhone(mobiles);
+console.log('The Expensive mobile is ', expensive);
