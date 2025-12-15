@@ -21,3 +21,30 @@ function woodQuantity( chairQuantity, tableQuantity, bedQuantity){
 
 const wood = woodQuantity(5, 0, 1);
 console.log("Wood needed",wood);
+
+
+// shopping price 
+
+/**
+ * Shirt price --> 500
+ * pant price --> 300
+ * shoe price --> 900
+ */
+
+function shopping(shirtQuantity, pantQuantity, shoeQuantity){
+    const perShirtPrice = 500;
+    const perPantPrice = 600;
+    const perShoePrice = 1500;
+
+    const totalShirtPrice = perShirtPrice * shirtQuantity;
+    const totalPantPrice = perPantPrice * pantQuantity;
+    const totalShoePrice = perShoePrice * shoeQuantity;
+
+    const totalPrice = totalShirtPrice + totalPantPrice + totalShoePrice;
+    
+    return totalPrice;
+}
+
+
+const totalShopping = shopping(2, 2, 1);
+console.log("Total Shopping Price", totalShopping);
